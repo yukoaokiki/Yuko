@@ -1,0 +1,153 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+
+<div class="tweets-container">
+
+<section id="first-block1">
+  <div class="title">
+    <%= link_to "POST", new_tweet_path %>
+    <%= link_to "START POINT", maps_top_path %>
+    <div class="border"></div>
+  </div>
+  <div class="title-container">
+   <h1>Lets go around</h1>
+   <h2><span style="color:white;">YAMAN</span><span style="color:black;">OTE</span> <span style="color:#C3DF5F;">LINE</span></h2>
+   <h3><span style="color:#787878;">WITH</span> CAMERA</h3>
+  </div>
+
+</section>
+
+<div class="box-left">
+    <%= image_tag'shibya.jpg' %>
+</div>
+
+
+<div class="containerwww">
+   <div class="box">
+    <p><%= link_to "Tokyo", "/tweets/tokyo" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "Yurakucho", "/tweets/yurakucho" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "Shinbashi", "/tweets/shinbashi" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "浜松町", "/tweets/hamamatsucyo" %></p>
+   </div>
+   
+   <div class="box">
+    <p><%= link_to "田町", "/tweets/tamachi" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "高輪ゲートウェイ", "/tweets/takanawagateway" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "品川", "/tweets/shinagawa" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "大崎", "/tweets/osaki" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "五反田", "/tweets/gotanda" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "目黒", "/tweets/meguro" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "恵比寿", "/tweets/ebisu" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "渋谷", "/tweets/shibuya" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "原宿", "/tweets/harajuku" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "代々木", "/tweets/yoyogi" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "新宿", "/tweets/shinjuku" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "新大久保", "/tweets/shinokubo" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "高田馬場", "/tweets/takadanobaba" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "目白", "/tweets/mejiro" %></p>
+   </div>
+
+   <div class="box">
+    <p><%= link_to "池袋", "/tweets/ikebukuro" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "大塚", "/tweets/otsuka" %></p>
+   </div>
+   
+   <div class="box">
+     <p><%= link_to "巣鴨", "/tweets/sugamo" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "駒込", "/tweets/komagome" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "田端", "/tweets/tabata" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "西日暮里", "/tweets/nishinippori" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "日暮里", "/tweets/nippori" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "鶯谷", "/tweets/uguisudani" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "上野", "/tweets/ueno" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "御徒町", "/tweets/okachimachi" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "秋葉原", "/tweets/akihabara" %></p>
+   </div>
+
+   <div class="box">
+     <p><%= link_to "神田", "/tweets/kanda" %></p>
+   </div>
+</div>
+
+<% @tweets.each do |t| %>
+  <div class="tweet">
+    <div class="main-box">
+    </div>
+  </div>
+<% end %>
+
+<div align="right"><a href="#">Top</a></div>

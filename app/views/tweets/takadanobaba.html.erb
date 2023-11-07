@@ -1,0 +1,7 @@
+<h1>高田馬場</h1>
+<% @tweets.each do |t| %>
+    <% if t.category == "takadanobaba" %>  
+    <p>内容:<%= t.name %></p>
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    <% end %>
+  <% end %>

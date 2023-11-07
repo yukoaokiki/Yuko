@@ -1,0 +1,2 @@
+module YukosHelper
+end

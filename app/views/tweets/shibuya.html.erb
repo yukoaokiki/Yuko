@@ -1,0 +1,8 @@
+<h1>渋谷</h1>
+<% @tweets.each do |t| %>
+    <% if t.category == "shibuya" %>  
+    <p>内容:<%= t.name %></p>
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+
+    <% end %>
+  <% end %>
