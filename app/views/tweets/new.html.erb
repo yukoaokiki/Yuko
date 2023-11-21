@@ -1,32 +1,37 @@
-<hn1>YOUR <span style="color:#C3DF5F;">P</span>OST</hn1>
 
-<hn5>お気に入りの写真や休憩スポットを投稿しよう</hn5>
-<hn6>Please POST your favorite Photos or information about Rest spot!</hn6>
+<div class="koma">
+  <%= image_tag 'rererekoma.jpg',  :size => "1360X900", class:"body" %>
+
+  <hn1>YOUR <span style="color:#C3DF5F;">P</span>OST</hn1>
+
+  <hn5>お気に入りの写真や休憩スポットを投稿しよう</hn5>
+  <hn6>Please POST your favorite Photos or information about Rest spot!</hn6>
+</div>
 
 <div class="post-container">
 
-<%= form_for @tweet do |f| %>
-  
-  <div class="field0">
-  STATION  <%= f.select :category, [["渋谷", "shibuya"],["新宿", "shinjuku"],["池袋", "ikebukuro"],["東京", "tokyo"],["品川", "shinagawa"],["恵比寿", "ebisu"],["神田", "kanda"], ["秋葉原", "akihabara"],["御徒町", "okachimachi"],["上野", "ueno"],["鶯谷", "uguisudani"], ["西日暮里", "nishinippori"],["日暮里", "nippori"], ["田端", "tabata"],["駒込", "komagome"],["巣鴨", "sugamo"],["大塚", "otsuka"], ["目白", "mejiro"],["高田馬場", "takadanobaba"], ["新大久保", "shinokubo"],["代々木", "yoyogi"],["原宿", "harajuku"],["目黒", "meguro"], ["五反田", "gotanda"],["大崎", "osaki"], ["高輪ゲートウェイ", "takanawagateway"],["田町", "tamachi"],["浜松町", "hamamatsucyo"],["新橋", "shinbashi"], ["有楽町", "yurakucyo"]], include_blank: "駅を選択" %>
-  </div>
+  <%= form_for @tweet do |f| %>
+    
+    <div class="field0">
+    <div class="field3">
+    <hn11>Station</hn11>
+    </div>
+    <%= f.select :category, [["渋谷", "shibuya"],["新宿", "shinjuku"],["池袋", "ikebukuro"],["東京", "tokyo"],["品川", "shinagawa"],["恵比寿", "ebisu"],["神田", "kanda"], ["秋葉原", "akihabara"],["御徒町", "okachimachi"],["上野", "ueno"],["鶯谷", "uguisudani"], ["西日暮里", "nishinippori"],["日暮里", "nippori"], ["田端", "tabata"],["駒込", "komagome"],["巣鴨", "sugamo"],["大塚", "otsuka"], ["目白", "mejiro"],["高田馬場", "takadanobaba"], ["新大久保", "shinokubo"],["代々木", "yoyogi"],["原宿", "harajuku"],["目黒", "meguro"], ["五反田", "gotanda"],["大崎", "osaki"], ["高輪ゲートウェイ", "takanawagateway"],["田町", "tamachi"],["浜松町", "hamamatsucyo"],["新橋", "shinbashi"], ["有楽町", "yurakucyo"]], include_blank: "駅を選択" %>
+    </div>
 
+    <div class="field1">
+      <%= f.label :Photo %>
+      <%= f.file_field :image %>
+    </div>
 
-  <div class="field1">
-    <%= f.label :Photo %>
-  <%= f.file_field :image %>
-  </div>
+    <div class="field2">
+     <div class="field5">
+     <div class="textareass"><%= f.label :comment %></div>
+     </div>
+     <%= f.text_field :name, :size => 25 %>
+    </div>
 
+    <pp><input type="submit" value="投稿する" class="example5"></pp>
 
-  <div class="field2">
-  <%= f.label :comment%>
-  <%= f.text_field :name, :size => 30 %>
-
-
+  <% end %>
 </div>
-
-<pp><%= f.submit "POST" %></pp>
-
-</div>
-
-<% end %>

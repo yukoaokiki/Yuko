@@ -1,8 +1,54 @@
-<h1>池袋</h1>
+<div class="tweets-container">
+
+<div class="modoru01">
+   <%= link_to tweets_path do %> 
+    <%= image_tag'modoru.jpg', size: "70x63" %>
+   <% end %>
+</div>
+
+<div class="icontokyo">
+    <%= image_tag'jy13.jpg', size:"270x270" %>
+</div>
+
+<div class="title-containertokyo">
+
+   <div class="titletokyo">
+    <h010>ikebukuro_13</h010>
+   </div>
+   
+   <div class="namaetokyo">
+    <h011>池袋駅</h011>
+   </div>
+
+   <div class="followertokyo">
+    <h012>35.7377</h012> 
+    <h013>139.7074</h013>
+   </div>
+
+   <div class="unittokyo">
+    <h014>longitude</h014>
+    <h015>latitude</h015>
+   </div>
+
+   <div class="abouttokyo">
+    <h016>埼玉から東京への玄関口として人が集まるエリア</h016>
+    <br><h019>駅周辺には様々なお店が集まり都内でも最大級の繁華街のひとつにもなっている</h019>
+   </div> 
+
+   <div class="googlemapurl">
+    <h017><span style="color:#787878;">https://maps.app.goo.gl/KnPhZRR6rRCFTbkD7?g_st=ic</span></017>
+   </div>
+</div>
+
+
+<div class="shashin">
 <% @tweets.each do |t| %>
     <% if t.category == "ikebukuro" %> 
-    <p>内容:<%= t.name %></p>
-    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+        <div class="toukoushashin"> 
+            <%= image_tag t.image_url, size: "300x400" if t.image? %>
+            <br><span style="color:#787878;">ikebukuro_13   </span><%= t.name %>
+        </div>
 
     <% end %>
-  <% end %>
+<% end %>
+</div>

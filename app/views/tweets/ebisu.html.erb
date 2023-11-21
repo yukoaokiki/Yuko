@@ -1,7 +1,54 @@
-<h1>恵比寿</h1>
+<div class="tweets-container">
+
+<div class="modoru01">
+   <%= link_to tweets_path do %> 
+    <%= image_tag'modoru.jpg', size: "70x63" %>
+   <% end %>
+</div>
+
+<div class="icontokyo">
+    <%= image_tag'jy21.jpg', size:"270x270" %>
+</div>
+
+<div class="title-containertokyo">
+
+   <div class="titletokyo">
+    <h010>ebisu_21</h010>
+   </div>
+   
+   <div class="namaetokyo">
+    <h011>恵比寿駅</h011>
+   </div>
+
+   <div class="followertokyo">
+    <h012>35.6467</h012> 
+    <h013>139.7101</h013>
+   </div>
+
+   <div class="unittokyo">
+    <h014>longitude</h014>
+    <h015>latitude</h015>
+   </div>
+
+   <div class="abouttokyo">
+    <h016>恵比寿ガーデンプレイスも有名な東京のオシャレな街No.1</h016>
+    <br><h019>全体的に洗練されていて、大人の街という表現がぴったり！</h019>
+   </div> 
+
+   <div class="googlemapurl">
+    <h017><span style="color:#787878;">https://maps.app.goo.gl/KnPhZRR6rRCFTbkD7?g_st=ic</span></017>
+   </div>
+</div>
+
+
+<div class="shashin">
 <% @tweets.each do |t| %>
-    <% if t.category == "ebisu" %>  
-    <p>内容:<%= t.name %></p>
-    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    <% if t.category == "ebisu" %> 
+        <div class="toukoushashin"> 
+            <%= image_tag t.image_url, size: "300x400" if t.image? %>
+            <br><span style="color:#787878;">ebisu_21   </span><%= t.name %>
+        </div>
+
     <% end %>
-  <% end %>
+<% end %>
+</div>

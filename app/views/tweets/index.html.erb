@@ -2,144 +2,298 @@
 
 <div class="tweets-container">
 
-<section id="first-block1">
-  <div class="title">
-    <%= link_to "POST", new_tweet_path %>
-    <%= link_to "START POINT", maps_top_path %>
-    <div class="border"></div>
-  </div>
-  <div class="title-container">
-   <h1>Lets go around</h1>
-   <h2><span style="color:white;">YAMAN</span><span style="color:black;">OTE</span> <span style="color:#C3DF5F;">LINE</span></h2>
-   <h3><span style="color:#787878;">WITH</span> CAMERA</h3>
-  </div>
+ <section id="first-block1">
 
-</section>
+   <div class="icons">
+    <div class="yourpost">
+     <%= link_to new_tweet_path do %> 
+     <%= image_tag'twitter5.jpg', size: "73x70" %>
+     <% end %>
+    </div>
+
+    <div class="omikujilink">
+     <%= link_to maps_top_path do %> 
+     <%= image_tag'darts8.jpg', size: "73x70" %>
+     <% end %>
+    </div>
+   </div>
+
+   <div class="title-container">
+    <h1>Lets go around</h1>
+    <h2><span style="color:white;">YAMA</span><span style="color:black;">NOTE</span> <span style="color:#C3DF5F;">LINE</span></h2>
+    <h3><span style="color:#787878;">WITH</span> CAMERA</h3>
+   </div>
+ </section>
+ 
+</div>
 
 <div class="box-left">
-    <%= image_tag'shibya.jpg' %>
+    <%= image_tag'shibya.jpg', size:"650x800" %>
+</div>
+
+<div class="kotoba">
+     <h80>  いつもは見下ろす東京の景色を</h80>
+     <br><h81>  違う高さから、違う速度で<h81>
+  <div class="kotoba2">
+     <br><h82>山手線沿いを一日かけて歩いたら</h82>
+     <br><h83>まだ知らない東京の街を感じることができました</h83>
+     <br><h84>さあ、貴方も貴女もカメラを持って</h84>
+     <br><h85>まだ見ぬ東京を覗きに行こう</h85>
+  </div>
 </div>
 
 
+<div class="box-under">
+  
+    <%= image_tag'train.jpg', id:"targetImage" %>
+
+    <br><h90>Enjoy the view of Tokyo that  you usually look down on, </h90>
+    <br><h91>from a different height and at a different speed than usual...</h91>
+</div>
+
+
+<div class="containerwwws">
+<h55>PHO<span style="color:#C3DF5F;">T</span>O</h55>
+<h56>______________________</h56>
+</div>
+
 <div class="containerwww">
-   <div class="box">
+   <div class="box01">
+   <%= link_to tweets_tokyo_path do %> 
+    <%= image_tag'tokyoTop.jpg', size: "300x300" %>
+   <% end %>
     <p><%= link_to "Tokyo", "/tweets/tokyo" %></p>
    </div>
 
-   <div class="box">
+   
+   <div class="box30">
+   <%= link_to tweets_yurakucho_path do %> 
+    <%= image_tag'yurakuchoTop.jpg', size: "300x300" %>
+   <% end %>
     <p><%= link_to "Yurakucho", "/tweets/yurakucho" %></p>
    </div>
 
-   <div class="box">
+
+   <div class="box29">
+   <%= link_to tweets_shinbashi_path do %> 
+    <%= image_tag'shinbashiTop.jpg', size: "300x300" %>
+   <% end %>
     <p><%= link_to "Shinbashi", "/tweets/shinbashi" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "浜松町", "/tweets/hamamatsucyo" %></p>
+
+   <div class="box28">
+   <%= link_to tweets_hamamatsucyo_path do %> 
+    <%= image_tag'hamamatsuchoTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Hamamatsucho", "/tweets/hamamatsucyo" %></p>
    </div>
    
-   <div class="box">
-    <p><%= link_to "田町", "/tweets/tamachi" %></p>
+
+   <div class="box27">
+   <%= link_to tweets_tamachi_path do %> 
+    <%= image_tag'tamachiTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Tamachi", "/tweets/tamachi" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "高輪ゲートウェイ", "/tweets/takanawagateway" %></p>
+
+   <div class="box26">
+   <%= link_to tweets_takanawagateway_path do %> 
+    <%= image_tag'takanawaTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Takanawa Gateway", "/tweets/takanawagateway" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "品川", "/tweets/shinagawa" %></p>
+
+   <div class="box25">
+   <%= link_to tweets_shinagawa_path do %> 
+    <%= image_tag'shinagawaTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Shinagawa", "/tweets/shinagawa" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "大崎", "/tweets/osaki" %></p>
+
+   <div class="box24">
+   <%= link_to tweets_osaki_path do %> 
+    <%= image_tag'osakiTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Osaki", "/tweets/osaki" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "五反田", "/tweets/gotanda" %></p>
+
+   <div class="box23">
+   <%= link_to tweets_gotanda_path do %> 
+    <%= image_tag'gotandaTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Gotanda", "/tweets/gotanda" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "目黒", "/tweets/meguro" %></p>
+
+   <div class="box22">
+   <%= link_to tweets_meguro_path do %> 
+    <%= image_tag'meguroTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Meguro", "/tweets/meguro" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "恵比寿", "/tweets/ebisu" %></p>
+
+   <div class="box21">
+   <%= link_to tweets_ebisu_path do %> 
+    <%= image_tag'ebisuTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Ebisu", "/tweets/ebisu" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "渋谷", "/tweets/shibuya" %></p>
+
+   <div class="box20">
+   <%= link_to tweets_shibuya_path do %> 
+    <%= image_tag'shibuyaTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Shibuya", "/tweets/shibuya" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "原宿", "/tweets/harajuku" %></p>
+
+   <div class="box19">
+   <%= link_to tweets_harajuku_path do %> 
+    <%= image_tag'harajukuTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Harajuku", "/tweets/harajuku" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "代々木", "/tweets/yoyogi" %></p>
+
+   <div class="box18">
+   <%= link_to tweets_yoyogi_path do %> 
+    <%= image_tag'yoyogiTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Yoyogi", "/tweets/yoyogi" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "新宿", "/tweets/shinjuku" %></p>
+
+   <div class="box17">
+   <%= link_to tweets_shinjuku_path do %> 
+    <%= image_tag'shinjukuTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Shinjuku", "/tweets/shinjuku" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "新大久保", "/tweets/shinokubo" %></p>
+
+   <div class="box16">
+   <%= link_to tweets_shinokubo_path do %> 
+    <%= image_tag'shinokuboTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Shin-Okubo", "/tweets/shinokubo" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "高田馬場", "/tweets/takadanobaba" %></p>
+
+   <div class="box15">
+   <%= link_to tweets_takadanobaba_path do %> 
+    <%= image_tag'takadanobabaTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Takadanobaba", "/tweets/takadanobaba" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "目白", "/tweets/mejiro" %></p>
+
+   <div class="box14">
+   <%= link_to tweets_mejiro_path do %> 
+    <%= image_tag'mejiroTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Mejiro", "/tweets/mejiro" %></p>
    </div>
 
-   <div class="box">
-    <p><%= link_to "池袋", "/tweets/ikebukuro" %></p>
+
+   <div class="box13">
+   <%= link_to tweets_ikebukuro_path do %> 
+    <%= image_tag'ikebukuroTop.jpg', size: "300x300" %>
+   <% end %>
+    <p><%= link_to "Ikebukuro", "/tweets/ikebukuro" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "大塚", "/tweets/otsuka" %></p>
+
+   <div class="box12">
+   <%= link_to tweets_otsuka_path do %> 
+    <%= image_tag'otsuka.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Otsuka", "/tweets/otsuka" %></p>
    </div>
    
-   <div class="box">
-     <p><%= link_to "巣鴨", "/tweets/sugamo" %></p>
+
+   <div class="box11">
+   <%= link_to tweets_sugamo_path do %> 
+    <%= image_tag'sugamoTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Sugamo", "/tweets/sugamo" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "駒込", "/tweets/komagome" %></p>
+   <div class="box10">
+   <%= link_to tweets_komagome_path do %> 
+    <%= image_tag'komagomeTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Komagome", "/tweets/komagome" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "田端", "/tweets/tabata" %></p>
+
+   <div class="box09">
+   <%= link_to tweets_tabata_path do %> 
+    <%= image_tag'tabataTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Tabata", "/tweets/tabata" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "西日暮里", "/tweets/nishinippori" %></p>
+
+   <div class="box08">
+   <%= link_to tweets_nishinippori_path do %> 
+    <%= image_tag'nishinipporiTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Nishi-Nippori", "/tweets/nishinippori" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "日暮里", "/tweets/nippori" %></p>
+
+   <div class="box07">
+   <%= link_to tweets_nippori_path do %> 
+    <%= image_tag'nipporiTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Nippori", "/tweets/nippori" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "鶯谷", "/tweets/uguisudani" %></p>
+
+   <div class="box06">
+   <%= link_to tweets_uguisudani_path do %> 
+    <%= image_tag'uguisudaniTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Uguisudani", "/tweets/uguisudani" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "上野", "/tweets/ueno" %></p>
+
+   <div class="box05">
+   <%= link_to tweets_ueno_path do %> 
+    <%= image_tag'uenoTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Ueno", "/tweets/ueno" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "御徒町", "/tweets/okachimachi" %></p>
+
+   <div class="box04">
+   <%= link_to tweets_okachimachi_path do %> 
+    <%= image_tag'okachimachiTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Okachimachi", "/tweets/okachimachi" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "秋葉原", "/tweets/akihabara" %></p>
+
+   <div class="box03">
+   <%= link_to tweets_akihabara_path do %> 
+    <%= image_tag'akihabaraTop.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Akihabara", "/tweets/akihabara" %></p>
    </div>
 
-   <div class="box">
-     <p><%= link_to "神田", "/tweets/kanda" %></p>
+
+   <div class="box02">
+   <%= link_to tweets_kanda_path do %> 
+    <%= image_tag'kandaTop2.jpg', size: "300x300" %>
+   <% end %>
+     <p><%= link_to "Kanda", "/tweets/kanda" %></p>
    </div>
 </div>
 
@@ -150,4 +304,16 @@
   </div>
 <% end %>
 
-<div align="right"><a href="#">Top</a></div>
+
+
+
+
+<div class="titleunder">  
+    
+    <div align="right"><a href="#"><%= image_tag'backto2.jpg', size: "50x50" %></a></div>
+
+  </div>
+
+
+
+  

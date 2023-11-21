@@ -1,53 +1,65 @@
 hn1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 140px;
+    font-size: 180px;
     font-weight: lighter;
     margin: auto;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 hn5{
-    margin-top: 30px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 70px;
     display: flex;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
 
 hn6{
-    margin-left: 30px;
+    margin-left: 70px;
+    font-size: 20px;
     display: flex;
-    color:#787878 ;
+    color:rgb(0, 0, 0) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+
+
 .field0{
-width: 500px;
+  width: 500px;
   font-size: 20px;
   margin-top: 20px;
+  display: flex;
 }
+
 
 .field1{
   width: 500px;
   font-size: 20px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
+}
+.field1 label{
+  width: 115px;
 }
 
 .field2{
     width: 200px;
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
   }
+  .field3{
+    margin-right: 39px;
+  }
 
-
-.post-container{
-    margin-top: 50px;
-    margin-left: 50px;
-}
+  .textareass{
+    width: 115px;
+    height: 3em;
+  }
 
 
 .pp{
@@ -62,11 +74,40 @@ input[type="POST"] {
   }
 
 .post-container{
-    padding: 0.5em 1em;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 0.5em 1.5em;
     margin: 2em 0;
     font-weight: bold;
-    color: #787878;/*文字色*/
-    background: #FFF;
-    width: 400px;
-    margin-left: 200px;
+    background: #f5f1f173;
+    width: 350px;
+    margin-left: 730px;
+    margin-top:50px;
+    height: 280px;
+}
+
+
+.example5{
+  width: 300px;
+  display       : inline-block;
+  border-radius : 0%;          /* 角丸       */
+  font-size     : 15pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #C3DF5F;     /* 背景色     */
+  color         : rgb(0, 0, 0);     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 0.2px
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+}
+
+.body{
+  position: absolute;
+  z-index: -1;
 }

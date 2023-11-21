@@ -1,7 +1,54 @@
-<h1>目白</h1>
+<div class="tweets-container">
+
+<div class="modoru01">
+   <%= link_to tweets_path do %> 
+    <%= image_tag'modoru.jpg', size: "70x63" %>
+   <% end %>
+</div>
+
+<div class="icontokyo">
+    <%= image_tag'jy14.jpg', size:"270x270" %>
+</div>
+
+<div class="title-containertokyo">
+
+   <div class="titletokyo">
+    <h010>mejiro_14</h010>
+   </div>
+   
+   <div class="namaetokyo">
+    <h011>目白駅</h011>
+   </div>
+
+   <div class="followertokyo">
+    <h012>35.7203</h012> 
+    <h013>139.7062</h013>
+   </div>
+
+   <div class="unittokyo">
+    <h014>longitude</h014>
+    <h015>latitude</h015>
+   </div>
+
+   <div class="abouttokyo">
+    <h016>日本最大のオフィス街、丸の内の中心にあるターミナル駅</h016>
+    <br><h019>ここからスタートすれば、一周する頃にはステキな夜景が見れるかも！？</h019>
+   </div> 
+
+   <div class="googlemapurl">
+    <h017><span style="color:#787878;">https://maps.app.goo.gl/KnPhZRR6rRCFTbkD7?g_st=ic</span></017>
+   </div>
+</div>
+
+
+<div class="shashin">
 <% @tweets.each do |t| %>
-    <% if t.category == "mehiro" %>  
-    <p>内容:<%= t.name %></p>
-    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    <% if t.category == "mejiro" %> 
+        <div class="toukoushashin"> 
+            <%= image_tag t.image_url, size: "300x400" if t.image? %>
+            <br><span style="color:#787878;">mejiro_14   </span><%= t.name %>
+        </div>
+
     <% end %>
-  <% end %>
+<% end %>
+</div>

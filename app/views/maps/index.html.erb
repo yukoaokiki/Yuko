@@ -1,7 +1,34 @@
-<div class="geek">
+
   <% @maps.each do |t| %>
     <div class="yuuko">
-      <%= t.body %>
+     <% if t.body == "池袋駅" %>
+      <%= image_tag "omikujiikebukuro1.jpg", class:"geek" %>
+     <% end %> 
+
+     <% if t.body == "新宿駅" %>
+      <%= image_tag "omikujishinjuku4.jpg", class:"geek" %>
+     <% end %>
+
+     <% if t.body == "渋谷駅" %>
+      <%= image_tag "omikujishibuya1.jpg", class:"geek" %>
+     <% end %>
+
+     <% if t.body == "品川駅" %>
+      <%= image_tag "omikujishinagawa1.jpg", class:"geek" %>
+     <% end %>
+    
+
+     <% if t.body == "恵比寿駅" %>
+      <%= image_tag "omikujiebisu1.jpg", class:"geek" %>
+     <% end %>
+
+     <% if t.body == "東京駅" %>
+      <%= image_tag "omikujitokyo1.jpg", class:"geek" %>
+     <% end %>
+
+    <% end %> 
+
+
+      
     </div>
-  <% end %>
-</div>
+  
