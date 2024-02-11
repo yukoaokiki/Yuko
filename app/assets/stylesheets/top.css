@@ -43,7 +43,7 @@
     transition    : .1s;         /* なめらか変化 */
     border        : 4px solid #000000;    /* 枠の指定 */
     transition: 0.3s; /* 0.3秒で拡大までの時間 */
-    margin-top: 270px;
+    margin-top: 330px;
     margin-left: 500px;
     font-family: 'DotGothic16', sans-serif;
  }
